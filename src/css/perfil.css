@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color-azul-fuerte:rgba(7, 8, 38, 1);
+    --color-azul-claro:rgba(1, 21, 82, 1);
+    --color-azul-celeste:rgba(100, 131, 159, 1);
+    --color-rojo-claro:rgba(180, 0, 1, 1);
+    --color-rojo-fuerte:rgba(102, 4, 5, 1);
+    --fuente-principal:"Open Sans", sans-serif;
+    --fuente-segundaria:"Montserrat", sans-serif;
+}
+
+#formulario {
+    background: linear-gradient(to right, rgb(102, 4, 5,0.9), rgb(7, 8, 38,0.9));
+padding: 50px;
+    font-family: var(--fuente-principal);    
+}
+#formulario .form-group{
+    color: white;
+    margin: 10px 0px;
+
+}
+#formulario .form-group label{
+    color: white;    
+}
+
+#plan-estudio {
+    background-color: white;
+padding: 2%;
+    color: black;
+    font-family: var(--fuente-principal);
+
+}
+#plan-estudio p{
+    margin-bottom: 0px;
+}
+#plan-estudio .carrera{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.progress-spinner {
+    width: 100px;
+    /* Tamaño del spinner */
+    height: 100px;
+    /* Tamaño del spinner */
+}
+
+.spinner {
+    transform: rotate(-90deg);
+    /* Girar el spinner para que empiece desde la parte superior */
+}
+
+.background {
+    fill: none;
+    /* Color de fondo transparente */
+    stroke: #969696;
+    /* Color del borde del círculo */
+    stroke-width: 10;
+    /* Grosor del borde del círculo */
+}
+
+.foreground {
+    fill: none;
+    /* Color de fondo transparente */
+    stroke: #1e90ff;
+    stroke-width: 10;
+    stroke-dasharray: 251.2;
+    /* Circunferencia del círculo (2 * π * r) */
+    stroke-dashoffset: calc(251.2 * (1 - 0.8));
+    /* Tamaño de la parte coloreada del spinner */
+    transition: stroke-dashoffset 0.5s ease;
+    /* Transición suave del cambio de tamaño */
+}
+
+.percentage {
+    font-size: 16px;
+    /* Tamaño de la fuente del porcentaje */
+    fill: #1e90ff;
+    /* Color del porcentaje */
+
+}
